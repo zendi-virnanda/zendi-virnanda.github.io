@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .hero-section {
+        background: url("assets/hero-party.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .hero-content {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+      .hero-content h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero-content p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .hero-content a {
+        background-color: #ff4081;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .hero-content a:hover {
+        background-color: #ff6385;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="hero-content">
+        <img
+          src="assets/hero-asset.png"
+          alt="Happy Birthday"
+          class="rounded-circle mb-4"
+          style="
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: top center;
+            border: 4px solid #fff;
+          "
+        />
+        <h1>
+          Happy Birthday Na
+          <span style="font-size: 3rem; color: red">&hearts;</span>
+          <span style="font-size: 3rem">🎉</span>
+        </h1>
+        <p>
+          May your special day be filled with joy, love, and unforgettable
+          memories. Here's to celebrating you—because you deserve the best!
+          <span style="font-size: 2rem">🥳</span
+          ><span style="font-size: 2rem; color: red">&hearts;</span>
+        </p>
+        <a href="/wishes.html">Start The Party</a>
+      </div>
+    </div>
+  </body>
+</html>
